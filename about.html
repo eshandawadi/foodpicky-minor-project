@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+
+}
+nav{
+	width:100%;
+	background:#00316b;
+
+}
+ul{
+	width:80%;
+	margin: 0 auto;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding:20px;
+
+}
+ul li:hover{
+	background: #e91e63;
+}
+
+ ul li a{
+ 	color:#fff;
+ 	text-decoration: none;
+ }
+  .toggle{
+  width:100%;
+  padding: 10px 20px;
+  background:#001f44;
+  text-align:right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+    display: none;   
+ }
+@media(max-width:768px ){
+  .toggle{
+    display:block;
+  }
+
+ul{
+  width:100%;
+  display: none;
+
+}
+ul li{
+  display: block;
+  text-align: center;
+
+}
+.active{
+  display: block;
+}
+}
+input[type="text"]{
+  background:#fff;
+  width:75px;
+  height:30px;
+  border: none;
+  outline: none;
+  border-radius:10px 10px 10px 10px;
+}
+input[type="submit"]{
+  background: #008000;
+  width:45px;
+  height:20px;
+  border:none;
+  outline: none;
+  border-radius:10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  left:-5px;
+}
+  .toggle{
+  width:100%;
+  padding: 10px 20px;
+  background:#001f44;
+  text-align:right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+    display: none;   
+ }
+@media(max-width:768px ){
+  .toggle{
+    display:block;
+  }
+
+ul{
+  width:100%;
+  display: none;
+
+}
+ul li{
+  display: block;
+  text-align: center;
+
+}
+.active{
+  display: block;
+}
+}
+input[type="text"]{
+  background:#fff;
+  width:75px;
+  height:30px;
+  border: none;
+  outline: none;
+  border-radius:10px 10px 10px 10px;
+}
+input[type="submit"]{
+  background: #008000;
+  width:45px;
+  height:20px;
+  border:none;
+  outline: none;
+  border-radius:10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  left:-5px;
+}
+.us{
+  color:white;
+  background-color:purple; 
+}
+img{
+  float: left;
+}
+
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+<body>
+
+    <nav>
+        <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>   
+      <ul>
+        <li>
+        <img src="logo1.jpg" ALT="some text" width=100px height=80px >
+      </li>
+        <li>
+           <a href="index.php">Home</a>
+        </li>
+        <li>
+         <a href="contact.php">Contact Us</a>
+        </li>
+        <li>
+          <a href="services.php">Menu</a>
+         
+         <li>
+           <a href="login.php">login<a>
+          </li>
+           
+            <li>
+            <a href="order.php">Order</a>
+           </li>
+          <li>
+          <a href="help.php">Help</a>
+        </li>
+        <li>
+          <a href="about.php">About Us</a>
+        </li>
+        <li>
+    <form>
+        <input type="text" name="" placeholder="cusine or restaurant">
+        <input type="submit" name="" value="Search">
+      
+    
+   
+    </form>
+        </li>
+    
+      </ul>
+      
+    </nav>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('ul').toggleClass('active');
+
+
+        })
+      })
+    </script>
+    <div class="us">
+	<h1><marquee>About FoodPicky</marquee></h1>
+    </div>
+<p><img src="delivery.jpg" alt="Pineapple" style="width:500px;height:200px;margin-right:15px;">
+FoodPicky is a online food ordering platform for all the foodies in Nepal, where they can search for their favourite restaurants, get food delivered to their home or office, get awesome deals when they dine-in at the restaurants, read and post restaurant reviews, explore restaurant menu, earn credits to their FoodPickyWallet and much more. You name it!</p>
+</div>
+
+<h1>Our team member</h1>
+<table>
+  <tr>
+    <td>
+<img src="eshan.jpg" width=200 height=200><b><br>CEO,FoodPicky</b>
+</td>
+<br>
+<td>
+<img src="ten.jpg" width=200 height=200><b><br>CFO,FoodPicky</b>
+</td><br>
+<tr>
+  <td>
+<img src="avash1.jpg"alt="avash1.jpg"  width=200 height=200><b><br>Managing Director,FoodPicky</b>
+</td>
+</tr>
+<br>
+<tr>
+  <td>
+
+
+<img src="shiva.jpg" alt="shiva.jpg" width=100 height=100 ><b><br>COO,FoodPicky</b>
+</td></tr>
+</table>
+
+</body>
+</html>

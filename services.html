@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+
+}
+nav{
+	width:100%;
+	background:#00316b;
+
+}
+ul{
+	width:80%;
+	margin: 0 auto;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding:20px;
+
+}
+ul li:hover{
+	background: #e91e63;
+}
+
+ ul li a{
+ 	color:#fff;
+ 	text-decoration: none;
+ }
+  .toggle{
+  width:100%;
+  padding: 10px 20px;
+  background:#001f44;
+  text-align:right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+    display: none;   
+ }
+@media(max-width:768px ){
+  .toggle{
+    display:block;
+  }
+
+ul{
+  width:100%;
+  display: none;
+
+}
+ul li{
+  display: block;
+  text-align: center;
+
+}
+.active{
+  display: block;
+}
+}
+input[type="text"]{
+  background:#fff;
+  width:75px;
+  height:30px;
+  border: none;
+  outline: none;
+  border-radius:10px 10px 10px 10px;
+}
+input[type="submit"]{
+  background: #008000;
+  width:45px;
+  height:20px;
+  border:none;
+  outline: none;
+  border-radius:10px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  left:-5px;
+}
+.service{
+  background-color: red;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ 
+
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+<body>
+
+    <nav>
+        <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>   
+      <ul>
+        <li>
+        <img src="logo1.jpg" ALT="some text" width=100px height=80px >
+      </li>
+        <li>
+           <a href="index.php">Home</a>
+        </li>
+        <li>
+         <a href="contact.php">Contact Us</a>
+        </li>
+        <li>
+          <a href="services.html">Menu</a>
+         
+         <li>
+           <a href="login.php">login<a>
+          </li>
+            
+            <li>
+            <a href="order.html">Order</a>
+           </li>
+          <li>
+          <a href="help.html">Help</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+    <form>
+        <input type="text" name="" placeholder="cusine or restaurant">
+        <input type="submit" name="" value="Search">
+      
+    
+   
+   </form>
+        </li>
+    
+      </ul>
+      
+    </nav>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('ul').toggleClass('active');
+
+
+        })
+      })
+    </script>
+    <div class="ok">
+
+<h2>Best Discount Food Items</h2>
+<p>Burger</p>
+
+<div class="container">
+  <img src="burger1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Burger, combo with crispy french fries and 500ml coke at price Rs.260</div>
+  </div>
+</div>
+
+<p>Fry momo</p>
+
+<div class="container">
+  <img src="fried momo1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Fry chicken momo at Rs.120</div>
+  </div>
+</div>
+
+<p>Chowmein</p>
+
+<div class="container">
+  <img src="chowmein.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Chowmein,at Rs.90 per plate</div>
+  </div>
+</div>
+
+<p>Dal Bhat Tarkali</p>
+
+<div class="container">
+  <img src="Dal Bhat Tarkari.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Set of mutton meat,dhat bhat tarkali at Rs.550
+    </div>
+  
+   </div>
+
+</div>
+</body>
+</html>
